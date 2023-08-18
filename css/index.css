@@ -182,7 +182,8 @@
             }
             
             .content .body {
-                background-color: #f6f6f6;
+                background-color: aliceblue;
+                ;
                 height: calc(100% - 68px);
                 padding: 20px
             }
