@@ -1093,6 +1093,9 @@ body {
         margin-left: 50%;
         transform: translateX(-50%);
     }
+    .tickets .cards .card {
+        width: 100%;
+    }
     .latest-news .content {
         flex-direction: column;
         align-items: center;
