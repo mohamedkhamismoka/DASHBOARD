@@ -613,7 +613,6 @@
             
             .latest-updates .name p:first-of-type {
                 font-size: 15px;
-                white-space: nowrap;
             }
             
             .latest-updates .name p:last-of-type {
