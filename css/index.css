@@ -607,7 +607,11 @@
             }
             
             .latest-updates .name {
-                gap: 10px
+                gap: 0px
+            }
+            
+            .latest-updates .name p:first-of-type {
+                font-size: 15px;
             }
             
             .latest-updates .name p:last-of-type {
@@ -641,6 +645,9 @@
                 }
                 .info-card .head img.mobile-hide {
                     display: none;
+                }
+                .tickets .cards .card {
+                    width: 100%;
                 }
                 .pad-20 {
                     padding: 30px 19px;
