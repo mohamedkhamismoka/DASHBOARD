@@ -612,6 +612,7 @@
             
             .latest-updates .name p:first-of-type {
                 font-size: 15px;
+                white-space: nowrap;
             }
             
             .latest-updates .name p:last-of-type {
@@ -666,5 +667,8 @@
                 .info-card .head .info img {
                     margin-left: 50%;
                     transform: translateX(-50%);
+                }
+                .heading h1 {
+                    font-size: 25px;
                 }
             }
