@@ -808,6 +808,83 @@
                width: 160px;
            }
            /*end latest-project-process*/
+           /*start reminders*/
+           
+           .reminders {
+               background-color: white;
+               border-radius: 10px;
+               padding: 20px;
+           }
+           
+           .reminders .contents {
+               margin-top: 20px;
+           }
+           
+           .reminders .contents .content {
+               justify-content: flex-start;
+               align-items: center;
+               gap: 10px
+           }
+           
+           .reminders .contents .content.content:not(:first-of-type) {
+               margin-top: 15px;
+           }
+           
+           .reminders .contents .content .circle {
+               min-width: 20px;
+               height: 20px;
+               border-radius: 50%;
+           }
+           
+           .reminders .contents .content .info h4 {
+               font-size: 14px;
+           }
+           
+           .reminders .contents .content .info p {
+               font-size: 13px;
+           }
+           
+           .reminders .contents .content:first-of-type .info {
+               padding-left: 10px;
+               border-left: 2px solid red;
+           }
+           
+           .reminders .contents .content:first-of-type .circle {
+               background-color: red;
+           }
+           
+           .reminders .contents .content .info p {
+               margin-top: 5px;
+               color: #888
+           }
+           
+           .reminders .contents .content:nth-of-type(2) .circle {
+               background-color: orange;
+           }
+           
+           .reminders .contents .content.content:nth-of-type(2) .info {
+               padding-left: 10px;
+               border-left: 2px solid orange;
+           }
+           
+           .reminders .contents .content:nth-of-type(3) .circle {
+               background-color: green;
+           }
+           
+           .reminders .contents .content.content:nth-of-type(3) .info {
+               padding-left: 10px;
+               border-left: 2px solid green;
+           }
+           
+           .reminders .contents .content:nth-of-type(4) .circle {
+               background-color: blue;
+           }
+           
+           .reminders .contents .content.content:nth-of-type(4) .info {
+               padding-left: 10px;
+               border-left: 2px solid blue;
+           }
+           /*end reminders*/
            /*start media query*/
            
            @media screen and (max-width: 767px) {
@@ -864,8 +941,8 @@
                    justify-content: center;
                    text-align: center;
                }
-               .heading {
-                   text-align: center;
+               .heading h1 {
+                   font-size: 25px;
                }
                .latest-project-process img {
                    display: none;
