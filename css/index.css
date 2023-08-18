@@ -342,7 +342,8 @@
                 margin-top: 20px;
                 font-size: 15px;
                 margin-left: 2px;
-                color: #888
+                color: #888;
+                white-space: nowrap;
             }
             
             .tickets .cards {
