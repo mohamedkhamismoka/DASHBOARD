@@ -150,6 +150,7 @@ body {
 
 .content {
     width: 100%;
+    overflow: hidden;
 }
 
 .header {
@@ -1050,6 +1051,93 @@ body {
     color: white;
     font-size: 14px;
 }
+
+
+/*start projects table*/
+
+.projects {
+    margin-top: 20px;
+}
+
+.projects .table-responsive {
+    margin-top: 20px;
+}
+
+.projects .table-responsive {
+    overflow-x: auto;
+}
+
+.projects .table-responsive table {
+    min-width: 1000px;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.projects .table-responsive table tr td {
+    transition: all 0.3s;
+}
+
+.projects .table-responsive table tr:hover td {
+    background-color: #faf7f7;
+}
+
+.projects .table-responsive table thead tr:hover td {
+    background-color: #eee
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.projects .table-responsive table thead {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.projects .table-responsive table,
+.projects .table-responsive table tr,
+.projects .table-responsive table td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.projects .table-responsive table tr td img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+
+.projects .table-responsive table td {
+    padding: 20px;
+}
+
+.projects .table-responsive table td .btn-shape {
+    padding: 4px 10px;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.projects .table-responsive table td img:not(:first-of-type) {
+    margin-left: -20px;
+}
+
+
+/*end projects table*/
 
 
 /*start media query*/
