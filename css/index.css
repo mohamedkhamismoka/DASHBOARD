@@ -1290,7 +1290,7 @@ body {
         display: flex;
         flex-direction: column;
     }
-    .info-card .head img.mobile-hide {
+    .info-card .head-part img.mobile-hide {
         display: none;
     }
     .pad {
@@ -1304,7 +1304,7 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    .info-card .head .info img {
+    .info-card .head-part .info img {
         margin-left: 50%;
         transform: translateX(-50%);
     }
