@@ -53,6 +53,10 @@ body {
     padding: 20px;
 }
 
+.gap-5 {
+    gap: 5px;
+}
+
 @keyframes changeColor {
     from {
         background-color: blue;
@@ -1138,6 +1142,76 @@ body {
 
 
 /*end projects table*/
+
+
+/*start Plans*/
+
+.first-plan .title {
+    background-color: #22c55e;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid white;
+    outline: 3px solid #22c55e;
+}
+
+.first-plan .title p:first-of-type {
+    font-size: 25px;
+}
+
+.first-plan .title p:last-of-type {
+    font-size: 40px;
+    position: relative;
+}
+
+.first-plan .title p:last-of-type::before {
+    position: absolute;
+    content: '$';
+    font-size: 25px;
+    left: -20px;
+    top: -6px;
+}
+
+.first-plan .plan-content {
+    margin-top: 20px;
+}
+
+.item {
+    padding: 15px 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.join {
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.help {
+    color: #888;
+    cursor: pointer;
+}
+
+.yes {
+    color: #22c55e;
+}
+
+.green {
+    background-color: #22c55e;
+}
+
+.no {
+    color: red;
+}
+
+
+/*end plans*/
 
 
 /*start media query*/
