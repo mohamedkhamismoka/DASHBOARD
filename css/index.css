@@ -266,11 +266,11 @@ body {
 
 /*start infocard*/
 
-.info-card .head .info {
+.info-card .head-part .info {
     width: 100%;
 }
 
-.info-card .head .info img {
+.info-card .head-part .info img {
     margin-left: 50%;
     transform: translateX(-50%);
 }
@@ -280,7 +280,7 @@ body {
     border-radius: 10px;
 }
 
-.info-card .head {
+.info-card .head-part {
     display: flex;
     justify-content: space-between;
     background-color: #eee;
@@ -289,17 +289,17 @@ body {
     border-top-right-radius: 10px;
 }
 
-.info-card .head img {
+.info-card .head-part img {
     width: 200px;
 }
 
-.info-card .head .info {
+.info-card .head-part .info {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.info-card .head .info img {
+.info-card .head-part .info img {
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -789,15 +789,17 @@ body {
     content: '';
     position: absolute;
     width: 2px;
-    height: 100%;
+    height: 98%;
     background-color: blue;
-    left: 10px;
+    left: 12px;
+    top: 2px;
 }
 
 .latest-project-process .contents .content {
     display: flex;
     align-items: center;
     gap: 15px;
+    padding: 3px;
 }
 
 .latest-project-process .contents .content .circle {
@@ -1192,6 +1194,15 @@ body {
 .item {
     padding: 15px 0px;
     border-bottom: 1px solid #ccc;
+    align-items: center;
+}
+
+.item div {
+    align-items: center;
+}
+
+.item div p {
+    font-size: 15px;
 }
 
 .join {
@@ -1326,6 +1337,12 @@ body {
     .social-media .content .youtube .info,
     .social-media .content .facebook .info {
         padding: 0px 11px;
+    }
+    .content .body {
+        padding: 20px 10px;
+    }
+    .content .body .head {
+        margin-left: 10px;
     }
 }
 
