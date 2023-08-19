@@ -134,6 +134,8 @@ body {
     border-radius: 6px;
     padding: 10px;
     margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .sidebar .tabs .tab.active {
@@ -1158,16 +1160,22 @@ body {
     outline: 3px solid #22c55e;
 }
 
-.first-plan .title p:first-of-type {
+.first-plan .title p:first-of-type,
+.second-plan .title p:first-of-type,
+.third-plan .title p:first-of-type {
     font-size: 25px;
 }
 
-.first-plan .title p:last-of-type {
+.first-plan .title p:last-of-type,
+.second-plan .title p:last-of-type,
+.third-plan .title p:last-of-type {
     font-size: 40px;
     position: relative;
 }
 
-.first-plan .title p:last-of-type::before {
+.first-plan .title p:last-of-type::before,
+.second-plan .title p:last-of-type::before,
+.third-plan .title p:last-of-type::before {
     position: absolute;
     content: '$';
     font-size: 25px;
@@ -1175,7 +1183,9 @@ body {
     top: -6px;
 }
 
-.first-plan .plan-content {
+.first-plan .plan-content,
+.second-plan .plan-content,
+.third-plan .plan-content {
     margin-top: 20px;
 }
 
@@ -1206,8 +1216,40 @@ body {
     background-color: #22c55e;
 }
 
+.blue {
+    background-color: #0075ff;
+}
+
+.orange {
+    background-color: #f59e0b;
+}
+
 .no {
     color: red;
+}
+
+.second-plan .title {
+    background-color: #0075ff;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid white;
+    outline: 3px solid #0075ff;
+}
+
+.third-plan .title {
+    background-color: #f59e0b;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid white;
+    outline: 3px solid #f59e0b;
 }
 
 
@@ -1221,7 +1263,7 @@ body {
         width: 58px;
         padding: 10px;
     }
-    .sidebar a {
+    .sidebar a p {
         display: none
     }
     .sidebar h3::before {
