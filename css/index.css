@@ -1295,6 +1295,7 @@ body {
     }
     .pad {
         padding: 30px 19px;
+        flex-direction: column;
     }
     .foot .content .align-items-center {
         gap: 5px;
