@@ -1486,7 +1486,8 @@ body {
         margin-left: 10px;
     }
     .page-courses,
-    .page-friends {
+    .page-friends,
+    .content .body .page.page-friends {
         display: grid;
         grid-template-columns: minmax(200px, 1fr);
         gap: 10px;
