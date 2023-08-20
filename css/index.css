@@ -223,7 +223,7 @@ body {
 }
 
 .content .body {
-    background-color: #f6f6f6;
+    background-color: #f1f5f9;
     height: calc(100% - 68px);
     padding: 20px
 }
@@ -1407,6 +1407,101 @@ body {
 /*end friends*/
 
 
+/*start Projects*/
+
+.content .body .page.projects-page .project {
+    position: relative;
+}
+
+.content .body .page.projects-page .project .date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+.content .body .page.projects-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.content .body .page.projects-page .project .images {
+    padding-top: 40px;
+}
+
+.content .body .page.projects-page .project .images img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -20px;
+}
+
+.content .body .page.projects-page .project .images img:first-of-type {
+    margin-left: 0;
+}
+
+.content .body .page.projects-page .project .project-head p:first-of-type {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content .body .page.projects-page .project .project-head p:last-of-type {
+    color: #888;
+    line-height: 1.3;
+}
+
+.content .body .page.projects-page .project .project-body {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0px;
+}
+
+.content .body .page.projects-page .project .project-body span {
+    padding: 3px 8px;
+    border-radius: 6px;
+    background-color: #eee;
+    font-size: 13px;
+}
+
+.content .body .page.projects-page .project .project-foot {
+    margin-top: 18px;
+}
+
+.content .body .page.projects-page .project .project-track {
+    position: relative;
+    width: 260px;
+    border-radius: 10px;
+    height: 8px;
+    background-color: #eee;
+}
+
+.content .body .page.projects-page .project .project-progress {
+    position: absolute;
+    border-radius: 10px;
+    height: 8px;
+    left: 0;
+    top: 0;
+}
+
+.project-progress-red {
+    background-color: #f44336;
+}
+
+.project-progress-green {
+    background-color: #22c55e;
+}
+
+.project-progress-blue {
+    background-color: #0077b5;
+}
+
+
 /*start media query*/
 
 @media screen and (max-width: 767px) {
@@ -1491,6 +1586,17 @@ body {
         display: grid;
         grid-template-columns: minmax(200px, 1fr);
         gap: 10px;
+    }
+    .content .body .page.projects-page .project .project-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project .project-body span {
+        width: fit-content;
+    }
+    .project .project-foot {
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
