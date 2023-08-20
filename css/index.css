@@ -20,7 +20,7 @@ body {
 /* Style the scrollbar handle */
 
  ::-webkit-scrollbar-thumb {
-    background: blue;
+    background: #0075ff;
 }
 
 .d-flex {
@@ -1269,7 +1269,8 @@ body {
 
 /*start courses*/
 
-.page-courses {
+.page-courses,
+.content .body .page.page-friends {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -1327,6 +1328,83 @@ body {
 
 
 /*end courses*/
+
+
+/*start friends*/
+
+.friend {
+    position: relative;
+}
+
+.friend .friend-head {
+    align-items: center;
+}
+
+.friend .friend-head img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.friend .friend-head h4 {
+    margin: 10px 0;
+}
+
+.friend .friend-head p {
+    color: #888;
+}
+
+.friend .friend-body {
+    gap: 15px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 15px;
+    padding: 15px 0;
+}
+
+.friend .friend-foot {
+    margin-top: 15px;
+    align-items: center;
+}
+
+.friend .friend-foot .profile,
+.friend .friend-foot .remove {
+    border: none;
+    border-radius: 6px;
+    padding: 4px 10px;
+    color: white;
+}
+
+.friend .friend-foot .profile {
+    background-color: #0075ff;
+}
+
+.friend .friend-foot .remove {
+    background-color: #f44336;
+}
+
+.friend .friend-foot p {
+    font-size: 13px;
+    color: #888;
+}
+
+.friend-contact {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.friend-contact svg {
+    border-radius: 50%;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+/*end friends*/
 
 
 /*start media query*/
@@ -1407,7 +1485,8 @@ body {
     .content .body .head {
         margin-left: 10px;
     }
-    .page-courses {
+    .page-courses,
+    .page-friends {
         display: grid;
         grid-template-columns: minmax(200px, 1fr);
         gap: 10px;
