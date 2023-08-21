@@ -278,6 +278,7 @@ body {
 .info-card {
     background-color: white;
     border-radius: 10px;
+    position: relative;
 }
 
 .info-card .head-part {
@@ -291,6 +292,7 @@ body {
 
 .info-card .head-part img {
     width: 200px;
+    margin-bottom: -10px;
 }
 
 .info-card .head-part .info {
@@ -316,13 +318,13 @@ body {
 
 .foot .showprofile {
     justify-content: end;
-    padding: 12px;
+    padding: 15px;
 }
 
 .foot .showprofile button {
     background-color: #0075ff;
     color: white;
-    padding: 7px 20px;
+    padding: 4px 10px;
     border: none;
     border-radius: 5px;
 }
@@ -1543,6 +1545,9 @@ body {
     .info-card .head-part .info img {
         margin-left: 50%;
         transform: translateX(-50%);
+    }
+    .info-card .head-part .info p {
+        margin-left: 30px;
     }
     .tickets .cards .card {
         width: 100%;
