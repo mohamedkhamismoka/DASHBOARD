@@ -1340,6 +1340,7 @@ body {
 
 .friend .friend-head {
     align-items: center;
+    margin-top: 10px;
 }
 
 .friend .friend-head img {
