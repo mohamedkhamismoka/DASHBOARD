@@ -1757,6 +1757,70 @@ input:checked+.slider:before {
     color: black;
 }
 
+.widget-control-header p {
+    margin-top: 15px;
+    color: #888;
+}
+
+.widget-control .widget-control-body {
+    margin-top: 20px;
+}
+
+.widget-control .widget-control-body .check {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.widget-control .widget-control-body .check input {
+    appearance: none;
+    display: none;
+}
+
+.widget-control .widget-control-body .check label {
+    position: relative;
+    color: black;
+    font-size: 17px;
+}
+
+.widget-control .widget-control-body .check label p {
+    margin-left: 30px;
+}
+
+.widget-control .widget-control-body .check label::after {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    content: '\2713';
+    background-color: #0075ff;
+    color: white;
+    left: 0;
+    top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    font-size: 15px;
+    transition: all 0.4s;
+}
+
+.widget-control .widget-control-body .check label::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: transparent;
+    left: 0;
+    top: -2px;
+    border: 1px solid #ddd;
+}
+
+.widget-control .widget-control-body .check input:checked+label::after {
+    transform: scale(1) rotate(360deg);
+}
+
 
 /*start media query*/
 
