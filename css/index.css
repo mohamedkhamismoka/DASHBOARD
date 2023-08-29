@@ -1711,6 +1711,52 @@ input:checked+.slider:before {
     background-color: #eee;
 }
 
+.social-info-header p {
+    color: #888;
+    margin-top: 15px;
+}
+
+.social-info-body {
+    gap: 15px;
+}
+
+.social-info-body svg {
+    transition: all 0.3s ease;
+}
+
+.social-info-body input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+    width: 100%;
+}
+
+.social-info-body .social input:focus {
+    outline: none;
+}
+
+.social-info-body .social {
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.social-info-body .social .icon {
+    width: 40px;
+    height: 40px;
+    color: #888;
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #ddd;
+}
+
+.social-info-body .social:focus-within svg {
+    color: black;
+}
+
 
 /*start media query*/
 
