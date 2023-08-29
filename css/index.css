@@ -1570,15 +1570,15 @@ body {
     position: absolute;
     content: "\2716";
     width: 24px;
-    left: 4px;
+    transform: translateX(6px);
     bottom: 4px;
     ;
     height: 24px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     color: #888;
 }
 
@@ -1593,10 +1593,10 @@ input:focus+.slider {
 input:checked+.slider:before {
     content: "\2713";
     ;
-    transform: translateX(42px);
+    transform: translateX(48px);
     color: #0075ff;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 
