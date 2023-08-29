@@ -1757,7 +1757,8 @@ input:checked+.slider:before {
     color: black;
 }
 
-.widget-control-header p {
+.widget-control-header p,
+.backup-manager-header p {
     margin-top: 15px;
     color: #888;
 }
@@ -1820,6 +1821,79 @@ input:checked+.slider:before {
 .widget-control .widget-control-body .check input:checked+label::after {
     transform: scale(1) rotate(360deg);
 }
+
+.backup-manager .backup-manager-body .choice input {
+    appearance: none;
+    display: none;
+}
+
+.backup-manager .backup-manager-body .choice {
+    margin-top: 20px;
+}
+
+.backup-manager .backup-manager-body .choice label {
+    position: relative;
+}
+
+.backup-manager .backup-manager-body .choice label::before {
+    position: absolute;
+    content: '';
+    max-width: 20px;
+    max-height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    top: -3px;
+}
+
+.backup-manager .backup-manager-body .choice label::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #0075ff;
+    top: 1.1px;
+    left: 4.5px;
+    transform: scale(0);
+}
+
+.backup-manager .backup-manager-body .choice input:checked+label::after {
+    transform: scale(1);
+}
+
+.backup-manager .backup-manager-body {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.backup-manager-footer {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.backup-manager-footer div {
+    gap: 10px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.backup-manager .backup-manager-footer input {
+    appearance: none;
+    display: none;
+}
+
+.backup-manager .backup-manager-footer input:checked+div {
+    border: 2px solid #0075ff;
+    color: #0075ff;
+}
+
+
+/*end settings page*/
 
 
 /*start media query*/
@@ -1924,6 +1998,12 @@ input:checked+.slider:before {
     .content .body .page.settings-page {
         display: grid;
         grid-template-columns: minmax(100px, 1fr);
+    }
+    .backup-manager-footer {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 }
 
