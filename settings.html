@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Training website for me">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/index.css">
+    <title>Settings</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--start sidebar-->
+        <div class="sidebar">
+            <h3>ATIF</h3>
+
+            <div class="tabs">
+                <a class="tab" href="index.html">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <p>Dashboard</p>
+                </a>
+                <a class="tab active " href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
+                </a>
+                <a class="tab " href="index.html">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Profile</p>
+                </a>
+                <a class="tab  " href="Projects.html">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <p>Projects</p>
+                </a>
+                <a class="tab " href="courses.html">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <p>Courses</p>
+                </a>
+                <a class="tab " href="friends.html">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <p>Friends</p>
+                </a>
+                <a class="tab " href="index.html">
+                    <i class="fa-regular fa-file fa-fw"></i>
+                    <p>Files</p>
+                </a>
+
+                <a class="tab  " href="plans.html">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <p>Plans</p>
+                </a>
+            </div>
+
+
+        </div>
+        <!--end sidebar-->
+
+        <!--start content-->
+        <div class="content">
+            <!--start header-->
+            <div class="header">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="" id="" placeholder="Type a keyword" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type a keyword'" />
+                </div>
+                <div class="features">
+                    <div class="bill">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </div>
+                    <img src="https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/imgs/avatar.png" alt="avatar image">
+
+
+                </div>
+            </div>
+            <!--end header-->
+
+            <!--start body-->
+            <div class="body plans">
+                <div class="head">
+                    <h1>Settings</h1>
+                </div>
+
+                <div class="page settings-page ">
+                    <div class="site-control section">
+                        <div class="control-header d-flex flex-column">
+                            <h2>Site Control</h2>
+                            <p>Control The Website If There Is Maintenance</p>
+                        </div>
+                        <div class="control-body d-flex justify-content-between ">
+                            <div>
+                                <p>Website Control</p>
+                                <p>Open/Close Website And Type The Reason</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <div class="control-footer ">
+                            <textarea name="" id="" placeholder="Close Message Content"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="general-info section">
+                        <div class="general-info-header">
+                            <h2>General Info</h2>
+                            <p>General Information About Your Account</p>
+                        </div>
+
+                        <div class="general-info-body">
+                            <label for="fn">First Name</label>
+
+                            <input type="text" name="" id="fn" class="form-control"><br>
+                            <label for="ln">Last Name</label>
+
+                            <input type="text" name="" id="ln" class="form-control">
+
+                            <label for="fn">Email</label>
+
+                            <input type="email" name="" id="fn" class="form-control" placeholder="o@nn.sa" disabled>
+                            <a href="">Change</a>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="security-info section">
+                        <div class="security-info-header">
+                            <h2>Security Info</h2>
+                            <p>Security Information About Your Account</p>
+                        </div>
+
+                        <div class="security-info-body" style="margin-top: 20px;">
+                            <div class="password d-flex justify-content-between">
+                                <div>
+                                    <h4>Password</h4>
+                                    <p>Last Change On 25/10/2021</p>
+                                </div>
+                                <a>Change</a>
+                            </div>
+
+                            <div class="two-factor d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4>Two-Factor Authentication</h4>
+                                    <p>Enable/Disable The Feature</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" >
+                                    <span class="slider round"></span>
+                                  </label>
+                            </div>
+
+                            <div class="devices d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h4>Devices</h4>
+                                    <p>Check The Login Devices List</p>
+                                </div>
+                                <a href="">Devices</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--end content-->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
+</body>
+
+</html>

@@ -1505,6 +1505,213 @@ body {
 }
 
 
+/*end projects*/
+
+
+/*start settings*/
+
+.content .body .page.settings-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.settings-page .control-header h2 {
+    margin-bottom: 15px;
+}
+
+.settings-page .control-header p {
+    color: #888;
+    font-size: 15px;
+}
+
+.settings-page .control-body {
+    margin-top: 20px;
+    align-items: end;
+}
+
+.settings-page .control-body p:last-of-type {
+    color: #888;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    min-width: 78px;
+    height: 32px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "\2716";
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    ;
+    height: 24px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    display: grid;
+    place-items: center;
+    color: #888;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    content: "\2713";
+    ;
+    transform: translateX(42px);
+    color: #0075ff;
+    display: grid;
+    place-items: center;
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.control-footer textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 150px;
+    resize: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.control-footer textarea:focus {
+    outline: 1px solid #ccc;
+}
+
+.general-info .general-info-header p,
+.security-info-header p {
+    margin-top: 15px;
+    color: #888;
+    font-size: 15px;
+}
+
+.general-info-body {
+    margin-top: 20px;
+}
+
+.general-info-body label {
+    display: block;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+.general-info-body input {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.general-info .general-info-body input[type='email'] {
+    background-color: #f0f4f8;
+    color: #bbb;
+    width: calc(100% - 80px);
+}
+
+.general-info .general-info-body a {
+    text-decoration: none;
+    color: #0075ff;
+    padding-left: 10px;
+}
+
+.password {
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.password h4 {
+    margin-bottom: 10px;
+}
+
+.password p {
+    color: #888;
+    font-size: 13px;
+}
+
+.password a {
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: #0075ff;
+}
+
+.two-factor,
+.devices {
+    margin-top: 15px;
+}
+
+.two-factor p,
+.devices p {
+    margin-top: 10px;
+    color: #888;
+    font-size: 13px;
+}
+
+.two-factor {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.devices a {
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: none;
+    color: black;
+    background-color: #eee;
+}
+
+
 /*start media query*/
 
 @media screen and (max-width: 767px) {
@@ -1603,6 +1810,10 @@ body {
     .project .project-foot {
         flex-direction: column;
         gap: 15px;
+    }
+    .content .body .page.settings-page {
+        display: grid;
+        grid-template-columns: minmax(100px, 1fr);
     }
 }
 
